@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_of_text_info">25sp</dimen>
+    <dimen name="size_of_button_text">25sp</dimen>
+    <dimen name="height_of_information_texts">60dp</dimen>
+    <dimen name="length_of_information_texts">280dp</dimen>
+    <dimen name="padding_edit_text">10dp</dimen>
+    <dimen name="margin_edit_text">30dp</dimen>
+    <dimen name="elevation_button">5dp</dimen>
+</resources>

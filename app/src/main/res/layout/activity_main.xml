@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/full_name_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:hint="Full name"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/color_information_text"
+            android:textSize="@dimen/size_of_text_info" />
+
+        <EditText
+            android:id="@+id/user_name_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:hint="Username"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/color_information_text"
+            android:textSize="@dimen/size_of_text_info" />
+
+        <EditText
+            android:id="@+id/email_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:hint="Email"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/color_information_text"
+            android:textSize="@dimen/size_of_text_info" />
+
+        <EditText
+            android:id="@+id/password_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/color_information_text"
+            android:textSize="@dimen/size_of_text_info" />
+
+        <EditText
+            android:id="@+id/re_password_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:hint="Re-type password"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/color_information_text"
+            android:textSize="@dimen/size_of_text_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Gender"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:textSize="@dimen/size_of_text_info"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_of_text_info"
+                android:layout_marginRight="@dimen/margin_edit_text"
+                android:text="male"/>
+
+            <RadioButton
+                android:textSize="@dimen/size_of_text_info"
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register_button"
+            android:gravity="center"
+            android:layout_width="@dimen/length_of_information_texts"
+            android:layout_height="@dimen/height_of_information_texts"
+            android:textSize="@dimen/size_of_button_text"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_of_button"
+            android:padding="@dimen/padding_edit_text"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/show_info_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/length_of_information_texts"
+            android:layout_height="@dimen/height_of_information_texts"
+            android:textSize="@dimen/size_of_button_text"
+            android:background="@drawable/shape_of_button"
+            android:padding="@dimen/padding_edit_text"
+            android:layout_margin="@dimen/margin_edit_text"
+            android:text="Show info" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+
+    <TextView
+        android:id="@+id/full_name_info"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="@dimen/margin_edit_text"
+        android:background="@drawable/information_background"
+        android:gravity="center"
+        android:text="Full name"
+        android:textColor="@color/color_information_text"
+        android:textSize="@dimen/size_of_text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_info"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="@dimen/margin_edit_text"
+        android:background="@drawable/information_background"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="@color/color_information_text"
+        android:textSize="@dimen/size_of_text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_info" />
+
+    <TextView
+        android:id="@+id/password_info"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="@dimen/margin_edit_text"
+        android:background="@drawable/information_background"
+        android:gravity="center"
+        android:text="Password"
+        android:textColor="@color/color_information_text"
+        android:textSize="@dimen/size_of_text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_info" />
+
+    <TextView
+        android:id="@+id/gender_info"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/information_background"
+        android:gravity="center"
+        android:text="Gender"
+        android:textColor="@color/color_information_text"
+        android:textSize="@dimen/size_of_text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_info" />
+
+    <Button
+        android:id="@+id/hide_info_button"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/margin_edit_text"
+        android:background="@drawable/shape_of_button"
+        android:gravity="center"
+        android:text="Hide info"
+        android:textSize="@dimen/size_of_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_info"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <TextView
+        android:id="@+id/user_name_info"
+        android:layout_width="@dimen/length_of_information_texts"
+        android:layout_height="@dimen/height_of_information_texts"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/information_background"
+        android:gravity="center"
+        android:text="User name"
+        android:textColor="@color/color_information_text"
+        android:textSize="@dimen/size_of_text_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
